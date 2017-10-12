@@ -52,3 +52,49 @@ var firstAndPike = {
 
 };
 firstAndPike.render();
+
+var seatacairport = {
+  name: 'SeaTac Airport',
+  //creating my key value pairs inside of my object they are called properties
+  minCustPerHour: 3,
+  maxCustPerHour: 24,
+  avgCookieSoldPerHour: 1.2,
+  randCustByHour: [],
+  cookiesSoldByHour: [],
+  totalCookies: 0,
+  //method for random customers by hour
+  calcRandCustByHour: function() {
+    for(var l = 0; l < hours.length; l++) {
+      this.randCustByHour.push(Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
+      console.log(this.randCustByHour[l]);
+
+    }
+  },
+  //method for cookies sold by hours
+  calcCookiesSoldByHour: function() {
+    for(var m = 0; m < hours.length; m++) {
+      this.cookiesSoldByHour.push(Math.round(this.avgCookieSoldPerHour * this.randCustByHour[m]));
+      console.log(this.cookiesSoldByHour[m]);
+    }
+  },
+  render: function() {
+    var airport = document.getElementById('airport');
+    var seatac = document.getElementById('seatac');
+
+    this.calcRandCustByHour();
+    this.calcCookiesSoldByHour();
+
+    var h3El = document.createElement('h3');
+
+    h3El.textContent = this.name;
+    seatac.appendChild(h3El);
+    for(var n = 0; n < hours.length; n++) {
+      var liEl = document.createElement('li');
+      liEl.textContent = hours[n] + ': ' + this.cookiesSoldByHour[n] + ' cookies';
+      console.log(liEl);
+      airport.appendChild(liEl);
+    }
+  }
+};
+
+seatacairport.render();
