@@ -143,3 +143,48 @@ var seattlecenter = {
 };
 
 seattlecenter.render();
+
+var capitolhill = {
+  name: 'Capitol Hill',
+  //creating my key value pairs inside of my object they are called properties
+  minCustPerHour: 20,
+  maxCustPerHour: 38,
+  avgCookieSoldPerHour: 2.3,
+  randCustByHour: [],
+  cookiesSoldByHour: [],
+  totalCookies: 0,
+  //method for random customers by hour
+  calcRandCustByHour: function() {
+    for(var o = 0; o < hours.length; o++) {
+      this.randCustByHour.push(Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
+      console.log(this.randCustByHour[o]);
+
+    }
+  },
+  //method for cookies sold by hours
+  calcCookiesSoldByHour: function() {
+    for(var p = 0; p < hours.length; p++) {
+      this.cookiesSoldByHour.push(Math.round(this.avgCookieSoldPerHour * this.randCustByHour[p]));
+      console.log(this.cookiesSoldByHour[p]);
+    }
+  },
+  render: function() {
+    var capli = document.getElementById('capli');
+    var capHill = document.getElementById('capHill');
+    this.calcRandCustByHour();
+    this.calcCookiesSoldByHour();
+
+    var h3El = document.createElement('h3');
+
+    h3El.textContent = this.name;
+    capHill.appendChild(h3El);
+    for(var q = 0; q < hours.length; q++) {
+      var liEl = document.createElement('li');
+      liEl.textContent = hours[q] + ': ' + this.cookiesSoldByHour[q] + ' cookies';
+      console.log(liEl);
+      capli.appendChild(liEl);
+    }
+  }
+};
+
+capitolhill.render();
