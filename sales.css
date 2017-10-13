@@ -1,0 +1,19 @@
+* {
+  font-family: georgia, times, sans-serif;
+  background-color: lightcyan;
+}
+
+
+a {
+  color:navy;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: .5px;
+  font-size: 25px;
+
+
+
+h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: salmon;
+
+}

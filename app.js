@@ -1,6 +1,6 @@
 'use strict';
 // store hours
-var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 var firstAndPike = {
   name: 'First and Pike',
@@ -20,10 +20,11 @@ var firstAndPike = {
 
   calcCookiesSoldByHour: function() {
     for(var j = 0; j < hours.length; j++) {
-      this.cookiesSoldByHour.push(Math.round(this.avgCookieSoldPerHour * this.randCustByHour[j]));
+      this.cookiesSoldByHour.push(Math.floor(this.avgCookieSoldPerHour * this.randCustByHour[j]));
       console.log(this.cookiesSoldByHour[j]);
     }
   },
+
   render: function() {
     var firstandpike = document.getElementById('firstandpike');
     var fandp = document.getElementById('fandp');
@@ -60,7 +61,7 @@ var seatacairport = {
   },
   calcCookiesSoldByHour: function() {
     for(var m = 0; m < hours.length; m++) {
-      this.cookiesSoldByHour.push(Math.round(this.avgCookieSoldPerHour * this.randCustByHour[m]));
+      this.cookiesSoldByHour.push(Math.floor(this.avgCookieSoldPerHour * this.randCustByHour[m]));
       console.log(this.cookiesSoldByHour[m]);
     }
   },
@@ -103,7 +104,7 @@ var seattlecenter = {
   },
   calcCookiesSoldByHour: function() {
     for(var p = 0; p < hours.length; p++) {
-      this.cookiesSoldByHour.push(Math.round(this.avgCookieSoldPerHour * this.randCustByHour[p]));
+      this.cookiesSoldByHour.push(Math.floor(this.avgCookieSoldPerHour * this.randCustByHour[p]));
       console.log(this.cookiesSoldByHour[p]);
     }
   },
@@ -145,7 +146,7 @@ var capitolhill = {
   },
   calcCookiesSoldByHour: function() {
     for(var p = 0; p < hours.length; p++) {
-      this.cookiesSoldByHour.push(Math.round(this.avgCookieSoldPerHour * this.randCustByHour[p]));
+      this.cookiesSoldByHour.push(Math.floor(this.avgCookieSoldPerHour * this.randCustByHour[p]));
       console.log(this.cookiesSoldByHour[p]);
     }
   },
@@ -187,7 +188,7 @@ var alki = {
   },
   calcCookiesSoldByHour: function() {
     for(var p = 0; p < hours.length; p++) {
-      this.cookiesSoldByHour.push(Math.round(this.avgCookieSoldPerHour * this.randCustByHour[p]));
+      this.cookiesSoldByHour.push(Math.floor(this.avgCookieSoldPerHour * this.randCustByHour[p]));
       console.log(this.cookiesSoldByHour[p]);
     }
   },
