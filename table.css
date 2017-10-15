@@ -1,7 +1,12 @@
-/** {
+* {
   background-color: gray;
 }
-
+a {
+  color:navy;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: .5px;
+  font-size: 25px;
+}
 table, tr, td {
   background-color: green;
   border: 5px solid blue;
@@ -14,4 +19,4 @@ td {
   color: red;
   background-color: white;
   font-family: sans-serif;
-}*/
+}

@@ -1,6 +1,10 @@
-* {
-  font-family: georgia, times, sans-serif;
-  background-color: lightcyan;
+*{
+    background-color: silver;
+}
+
+h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: salmon;
 }
 
 
@@ -9,24 +13,17 @@ a {
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: .5px;
   font-size: 25px;
-
-
-
-h1 {
-  font-family: 'Ubuntu Condensed', sans-serif;
-  color: salmon;
-
 }
 table, tr, td {
   background-color: green;
-  border: 5px solid blue;
-  border-radius: 80px;
+  border: 5px solid salmon;
+  border-radius: 50px;
   padding: 20px;
 }
 
 td {
-  border-radius: 25px;
-  color: red;
+  border-radius: 5px;
+  color: black;
   background-color: white;
   font-family: sans-serif;
 }
