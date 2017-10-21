@@ -64,7 +64,7 @@ function makeHeaderRow(){
     thEl.textContent = hours[i];
     box.appendChild(thEl);
   }
-  thEl.textContent = 'Total';
+  thEl.textContent = 'Total Daily Cookies';
   cookiestands.appendChild(box);
 }
 
@@ -73,7 +73,7 @@ function makeTotalsRow() {
   var cookiestands = document.getElementById('cookiestands');
   var box = document.createElement('tr');
   box.setAttribute('id','total');
-  box.textContent = 'Total';
+  box.textContent = 'Total Hourly Cookies';
   var total = 0;
   for(var j = 0; j < hours.length; j++){
     var byHour = 0;

@@ -1,0 +1,76 @@
+* {
+  background-color: skyblue;
+}
+
+a {
+  color:black;
+  -webkit-text-stroke-color: snow;
+  /*-webkit-text-stroke-width: .5px;*/
+  font-size: 40px;
+  /*opacity: 0;*/
+  /*float: right;*/
+  background-color: salmon;
+}
+img.shirt {
+  max-width:100%;
+  max-height:100%;
+}
+img.resize {
+  max-width:100%;
+  max-height:100%;
+}
+img.frost {
+  max-width:100%;
+  max-height:100%;
+}
+img.sal {
+  max-width:100%;
+  max-height:100%;
+}
+img.painting {
+  max-width:100%;
+  max-height:100%;
+}
+img.fam {
+  max-width:100%;
+  max-height:100%;
+}
+.links {
+  display: inline;
+  padding-right:30px;
+}
+
+a:hover {
+  background-color:cyan;
+}
+#nav {
+  background-color: salmon;
+}
+
+.shirt {
+  border: solid black;
+  width: 325px;
+  height: 325px;
+}
+.cutter {
+  border: solid black;
+  width: 300px;
+  height: 300px;
+}
+
+.frosted {
+  border: solid black;
+  width: 275px;
+  height: 175px;
+}
+.salmon {
+  border: solid black;
+  width: 264px;
+  height: 100px;
+}
+
+.art {
+  border: solid black;
+  width: 282px;
+  height: 250px;
+}
