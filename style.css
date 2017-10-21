@@ -1,72 +1,77 @@
 
 
 body {
-  /*background-image: url(images/giphy-downsized-large.gif);*/
-  /*background-size: contain;*/
-  background-color: #A9A9A9;
+
+  background-color: skyblue;
 }
+
 a {
   color:black;
   -webkit-text-stroke-color: snow;
-  /*-webkit-text-stroke-width: .5px;*/
   font-size: 40px;
-  /*opacity: 0;*/
-  /*float: right;*/
-  
 
+.links {
+  display: inline;
+  padding-right:30px;
 }
+
+a:hover {
+  background-color:cyan;
+}
+
 #nav {
   color:mediumspringgreen;
   background: salmon;
-  /*opacity: .6;*/
 }
+
 h1 {
   font-family: 'Ubuntu Condensed', sans-serif;
   color: cornflowerblue;
   text-align: center;
   font-size: 50px;
   -webkit-text-stroke-color: snow;
-  /*-webkit-text-stroke-width: .5px;*/
   background: salmon;
 
 
 }
+
 #p2 {
   font-size: 10px;
 }
+
 h2 {
   background:salmon;
   text-align: center;
 
 }
+
 .section2 {
   background: salmon;
 }
+
 #locations {
   color:mediumspringgreen;
   -webkit-text-stroke-color: midnightblue;
-  /*-webkit-text-stroke-width: 1px;*/
   background: salmon;
   transform: translate(-0%, -10%);
 }
+
 .section {
   font-size: 20px;
   color:mediumspringgreen;
   -webkit-text-stroke-color: midnightblue;
-  /*-webkit-text-stroke-width: 1px;*/
-  /*background: snow;*/
-  /*opacity: .6;*/
 }
+
 ol {
   background: salmon;
   opacity: 1;
 }
+
 .container {
     position: relative;
     text-align: center;
     transform: translate(-0%, -10%);
     color: white;
-    /*background: none;*/
     font-family: 'Ubuntu Condensed', sans-serif;
     background-image: url(images/giphy-downsized-large.gif);
 }

@@ -1,8 +1,4 @@
-* {
-  font-family: georgia, times, sans-serif;
-  background-color: lightcyan;
-  
-}
+
 
 
 a {
@@ -10,11 +6,46 @@ a {
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: .5px;
   font-size: 25px;
+}
+a:hover {
+  background-color:cyan;
+}
 
+.links {
+  display: inline;
+  padding-right:30px;
+}
 
+table, tr, td {
+  background-color: cornflowerblue;
+  border: 5px solid salmon;
+  border-radius: 50px;
+  padding: 20px;
+}
+table {
+  border-collapse:collapse;
+}
+th {
+  background-color: cornflowerblue;
+}
+th:hover {
+  background-color:cyan;
+}
+td {
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  font-family: sans-serif;
 
-h1 {
-  font-family: 'Ubuntu Condensed', sans-serif;
-  color: salmon;
+}
+td:hover {
+  background-color:cyan;
+}
 
+form {
+  width: 50%;
+  background-color: salmon;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
