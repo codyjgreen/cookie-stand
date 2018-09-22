@@ -13,21 +13,21 @@ var firstAndPike = {
   cookiesSoldByHour: [],
   totalCookies: 0,
   //method for random customers by hour
-  calcRandCustByHour: function() {
-    for(var i = 0; i < hours.length; i++) {
+  calcRandCustByHour: function () {
+    for (var i = 0; i < hours.length; i++) {
       this.randCustByHour.push(Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
       console.log(this.randCustByHour[i]);
 
     }
   },
   //method for cookies sold by hours
-  calcCookiesSoldByHour: function() {
-    for(var j = 0; j < hours.length; j++) {
+  calcCookiesSoldByHour: function () {
+    for (var j = 0; j < hours.length; j++) {
       this.cookiesSoldByHour.push(Math.round(this.avgCookieSoldPerHour * this.randCustByHour[j]));
       console.log(this.cookiesSoldByHour[j]);
     }
   },
-  render: function() {
+  render: function () {
     var firstandpike = document.getElementById('firstandpike');
     var fandp = document.getElementById('fandp');
     //calling the methods in the object literal
@@ -40,7 +40,7 @@ var firstAndPike = {
     //give text to the new h3 element
     h3El.textContent = this.name;
     fandp.appendChild(h3El);
-    for(var k = 0; k < hours.length; k++) {
+    for (var k = 0; k < hours.length; k++) {
       //stepping through our hours array
       var liEl = document.createElement('li');
       //creating li elemnts with text of the hours
@@ -63,21 +63,21 @@ var seatacairport = {
   cookiesSoldByHour: [],
   totalCookies: 0,
   //method for random customers by hour
-  calcRandCustByHour: function() {
-    for(var l = 0; l < hours.length; l++) {
+  calcRandCustByHour: function () {
+    for (var l = 0; l < hours.length; l++) {
       this.randCustByHour.push(Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
       console.log(this.randCustByHour[l]);
 
     }
   },
   //method for cookies sold by hours
-  calcCookiesSoldByHour: function() {
-    for(var m = 0; m < hours.length; m++) {
+  calcCookiesSoldByHour: function () {
+    for (var m = 0; m < hours.length; m++) {
       this.cookiesSoldByHour.push(Math.round(this.avgCookieSoldPerHour * this.randCustByHour[m]));
       console.log(this.cookiesSoldByHour[m]);
     }
   },
-  render: function() {
+  render: function () {
     var airport = document.getElementById('airport');
     var seatac = document.getElementById('seatac');
 
@@ -88,7 +88,7 @@ var seatacairport = {
 
     h3El.textContent = this.name;
     seatac.appendChild(h3El);
-    for(var n = 0; n < hours.length; n++) {
+    for (var n = 0; n < hours.length; n++) {
       var liEl = document.createElement('li');
       liEl.textContent = hours[n] + ': ' + this.cookiesSoldByHour[n] + ' cookies';
       console.log(liEl);
